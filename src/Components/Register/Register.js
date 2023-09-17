@@ -23,7 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('https://smartbrain-api.postgres.database.azure.com/register', {
+    fetch('https://smartbrain-api.azurewebsites.net/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

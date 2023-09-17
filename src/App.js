@@ -88,7 +88,7 @@ class App extends Component {
   
     
 
-    fetch('https://smartbrain-api.postgres.database.azure.com/detectImage', {
+    fetch('https://smartbrain-api.azurewebsites.net/detectImage', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -98,7 +98,7 @@ class App extends Component {
     .then(response => response.json())
       .then(result => {
         console.log(result)
-        fetch('https://smartbrain-api.postgres.database.azure.com/image', {
+        fetch('https://smartbrain-api.azurewebsites.net/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

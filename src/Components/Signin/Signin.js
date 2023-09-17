@@ -19,8 +19,7 @@ class Signin extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    console.log()
-    fetch('https://smartbrain-api.postgres.database.azure.com/signin', {
+    fetch('https://smartbrain-api.azurewebsites.net/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
