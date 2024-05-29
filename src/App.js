@@ -145,7 +145,7 @@ class App extends Component {
           )
         }
         
-        <ParticlesBg type="cobweb" bg={true} />
+        {/* <ParticlesBg type="cobweb" bg={true} /> */}
       </div>
     );
   }
